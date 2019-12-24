@@ -2,8 +2,7 @@ from pdf2text import pdf2text
 
 print("Введите имя файла:")
 path = input()
-lines = pdf2text(path)
-X = [line for line in lines]
+X = pdf2text(path)
 
 from string2features import string2features
 import pickle as pkl

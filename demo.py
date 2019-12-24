@@ -1,9 +1,7 @@
 import os
 from typing import List, Dict
-
 from flask import Flask, request
 import tempfile
-
 from pdf2text import pdf2text
 import pickle as pkl
 from werkzeug.datastructures import FileStorage
@@ -55,8 +53,7 @@ def upload_file():
 
 @app.route('/example_pdf', methods=['GET'])
 def send_pdf():
-    path = "example.pdf"
-    return app.send_static_file(path)
+    return app.send_static_file("example.pdf")
 
 
 @app.route("/example_json", methods=['GET'])

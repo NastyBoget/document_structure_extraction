@@ -18,7 +18,7 @@ def pdf2text(path):
         for img in image:
             preprocess = "thresh"
             # загрузить образ и преобразовать его в оттенки серого
-            #image = cv2.imread('image.png') # image - numpy-array of pixels
+            #  image = cv2.imread('image.png') # image - numpy-array of pixels
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             # проверим, следует ли применять пороговое значение для предварительной обработки изображения
             if preprocess == "thresh":
@@ -30,4 +30,6 @@ def pdf2text(path):
             # загрузка изображения в виде объекта image Pillow, применение OCR, а затем удаление временного файла
             text = pytesseract.image_to_string(gray, lang='rus') #to_data
             res += text.split(sep='\n')
-    return res
+        return res
+    else:
+        print(path)

@@ -14,6 +14,7 @@ static_path = os.path.join(os.path.dirname(__file__))
 app = Flask(__name__, static_url_path=static_path)
 app.config["MAX_CONTENT_LENGTH"] = 16 * 1024 * 1024
 
+types = {1: "header", 2: "list", 3: "text"}
 
 def doc2json(path: str) -> List[Dict]:
     X = pdf2text(path)
@@ -21,7 +22,7 @@ def doc2json(path: str) -> List[Dict]:
     y = clf.predict(X)
     res = []
     for line, type_ in zip(X, y):
-        res.append({"type": int(type_), "content": line})
+        res.append({"type": types[int(type_)], "content": line})
     return res
 
 

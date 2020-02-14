@@ -3,6 +3,7 @@ import numpy as np
 import cv2
 import pdf2image as p2i
 
+
 def pdf2text(path):
     """
     path - путь к файлу pdf/jpeg
@@ -28,7 +29,7 @@ def pdf2text(path):
             elif preprocess == "blur":
                 gray = cv2.medianBlur(gray, 3)
             # загрузка изображения в виде объекта image Pillow, применение OCR, а затем удаление временного файла
-            text = pytesseract.image_to_string(gray, lang='rus') #to_data
+            text = pytesseract.image_to_string(gray, lang='rus')  # to_data
             res += text.split(sep='\n')
         return res
     else:

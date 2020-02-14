@@ -18,6 +18,8 @@ def picture2boxes(path):
     bounding box: {'text', 'bbox'}
     """
     img = cv2.imread(path)
+    h0 = img.shape[0]
+    w0 = img.shape[1]
     d = pytesseract.image_to_data(img, lang='rus+eng', output_type=pytesseract.Output.DICT)
     boxes = []
     for i in range(len(d['level'])):
@@ -33,4 +35,9 @@ def picture2boxes(path):
                     if boxes[j]['text'] != '':
                         boxes[j]['text'] += ' '
                     boxes[j]['text'] += d['text'][i]
+    for box in boxes:
+        box['bbox'][0] /= w0
+        box['bbox'][1] /= h0
+        box['bbox'][2] /= w0
+        box['bbox'][3] /= h0
     return boxes

@@ -3,6 +3,5 @@ images
 *pycache*
 *.zip
 ParagraphLabelerApp-master
-docs
 .idea
 manifest.pages

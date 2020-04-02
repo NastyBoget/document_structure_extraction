@@ -7,7 +7,6 @@
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage[colorinlistoftodos]{todonotes}
 \usepackage{wrapfig}
 \usepackage{lipsum}
 \usepackage{listings}
@@ -15,28 +14,13 @@
 \usepackage{indentfirst}
 \usepackage{times}
 \usepackage{textcomp}
-
-\definecolor{mygray}{rgb}{0.4,0.4,0.4}
-\definecolor{mygreen}{rgb}{0,0.8,0.6}
-\definecolor{myorange}{rgb}{1.0,0.4,0}
-
-\lstdefinestyle{customc}{
-  belowcaptionskip=1\baselineskip,
-  breaklines=true,
-  frame=L,
-  xleftmargin=\parindent,
-  language=C,
-  showstringspaces=false,
-  basicstyle=\footnotesize\ttfamily,
-  keywordstyle=\bfseries\color{green!40!black},
-  commentstyle=\itshape\color{purple!40!black},
-  identifierstyle=\color{blue},
-  stringstyle=\color{orange},
-  numbers=left,
-  numbersep=12pt,
-  numberstyle=\small\color{mygray},
-}
-\lstset{escapechar=@,style=customc}
+\usepackage{changepage}
+\makeatletter
+\newenvironment{restoretext}%
+    {\@parboxrestore%
+     \begin{adjustwidth}{}{\leftmargin}%
+    }{\end{adjustwidth}}
+\makeatother
 
 \addto\captionsrussian{\def\refname{Список литературы}}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
@@ -79,8 +63,7 @@
 \newpage 
 \section{Введение}
 
-Большое количество текстовой информации представлено в виде pdf-документов, причем эти документы могут 
-представлять собой сканированные копии других документов и у них может отсутствовать текстовый слой. При этом размер документов может быть очень большим. Зачастую требуется осуществлять поиск по содержимому таких документов и желательно осуществлять это более эффективным способом.
+Большое количество текстовой информации представлено в виде pdf-документов, причем эти документы могут представлять собой сканированные копии других документов и у них может отсутствовать текстовый слой. При этом размер документов может быть очень большим. Зачастую требуется осуществлять поиск по содержимому таких документов и желательно осуществлять это более эффективным способом.
 
 Как правило, документы имеют логическую структуру и имеют название, разбиение на главы, подглавы и т. д., содержат нумерованные и маркированные списки. Выделение такой логической структуры документа может помочь при решении задач автоматизированного анализа документов, а также при поиске по документам.
 
@@ -96,22 +79,25 @@
 
 При решении задачи можно выделить следующие этапы ее выполнения:
 
-1) Описание конкретной логической структуры, которую нужно выделить, т. е. разработка манифеста.
+\begin{enumerate}
+\item Описание конкретной логической структуры, которую нужно выделить, т. е. разработка манифеста.
 
-2) Разметка корпуса документов для обучения классификатора. Разметка проводится по правилам, указанным в манифесте. 
+\item Разметка корпуса документов для обучения классификатора. Разметка проводится по правилам, указанным в манифесте. 
 
-3) Реализация метода и проведение экспериментальной проверки разработанного метода.
+\item Реализация метода и проведение экспериментальной проверки разработанного метода.
+\end{enumerate}
+
+Ограничим класс документов, с которыми будем работать, сканированными документами без текстового слоя. Будем считать, что в документах не содержатся изображения и таблицы. 
 
 \newpage
 \section{Обзор существующих решений}
 
 По извлечению структуры из документов существуют несколько подходов:
-
-- на основе оглавления;
-
-- на основе правил;
-
-- на основе машинного обучения.
+\begin{itemize}
+\item на основе оглавления;
+\item на основе правил;
+\item на основе машинного обучения.
+\end{itemize}
 
 \subsection{Извлечение структуры из документов на основе оглавления и правил}
 
@@ -128,13 +114,13 @@
 
 В соревнованиях \cite{link2} кроме извлечения иерархической структуры документов решалась задача определения, является ли конкретный блок документа заголовком. Командам был дан набор pdf-документов, xml-файлов с выделенными блоками документов, а так же набор признаков для каждого блока: является ли шрифт блока жирным, курсивом, состоит ли текст из заглавных букв, начинается с заглавной буквы или с нумерации. Кроме данных признаков, каждая из команд использовала различные дополнительные морфологические, семантические, лингвистические признаки. На основе этих признаков обучались различные классификаторы: SVM, MNB, Extra Tree, Decision Tree, Gradient Boosting. Для оценки результатов использовалась F1-мера, максимальный score в соревновании -- 0,982.
 
-Победители соревнования \cite{link5} создали новый датасет для обучения с помощью аугментации данных, перевели новые сгенерированные текстовые блоки в векторное представление, а затем использовали рекуррентные нейронные сети LSTM и BiLSTM для решения задачи классификации. Процесс аугментации показан на схеме ниже.
+Победители соревнования \cite{link4} создали новый датасет для обучения с помощью аугментации данных, перевели новые сгенерированные текстовые блоки в векторное представление, а затем использовали рекуррентные нейронные сети LSTM и BiLSTM для решения задачи классификации. Процесс аугментации показан на схеме ниже.
 
 \begin{center}
 \includegraphics[height=0.5\textwidth]{pics/augmentation.png}
 \end{center}
 
-В статье \cite{link4} 2017 года структура документа извлекалась с использованием методов машинного обучения, включая глубокое обучение. Цель данной работы -- автоматически идентифицировать и классифицировать различные секции документов и понять их смысл в рамках документа (назначить семантическую метку). В рамках моей задачи интересна классификация секций документа.
+В статье \cite{link5} 2017 года структура документа извлекалась с использованием методов машинного обучения, включая глубокое обучение. Цель данной работы -- автоматически идентифицировать и классифицировать различные секции документов и понять их смысл в рамках документа (назначить семантическую метку). В рамках моей задачи интересна классификация секций документа.
 
 \begin{center}
 \includegraphics[width=1.0\textwidth]{pics/classifier.png}
@@ -158,21 +144,40 @@
 
 С этой целью был разработан манифест, прикрепленный в приложении.
 
+\subsection{Обоснование выбранного инструментария}
+
+В качестве языка реализации был выбран Python, так как для данного языка программирования разработано множество необходимых при решении задачи библиотек, а именно:
+
+\begin{itemize}
+\item \href{https://docs.python.org/3/library/re.html}{re} -- библиотека для работы с регулярными выражениями;
+\item \href{https://opencv.org}{opencv} -- библиотека для работы с изображениями (библиотека компьютерного зрения и машинного обучения);
+\item \href{https://pypi.org/project/pytesseract/}{pytesseract} -- обертка над программой tesseract, предназначенной для распознавания текста на изображении;
+\item \href{https://scikit-learn.org}{sklearn} -- библиотека для решения различных задач машинного обучения.
+\end{itemize}
+
 \subsection{Подготовка датасета для обучения}
+
+Для обучения классификатора строк необходимо иметь размеченный корпус документов. Для этой цели был использован набор документов в виде изображений в формате .jpeg, скачанный из интернета и размеченный с использованием системы для разметки, разработанной в ИСП РАН \cite{link6}.
+
+Данная система разметки с помощью библиотеки pytesseract позволила выделить в документах без текстового слоя строки текста, а также рамки, заключающие в себе эти текстовые строки (bounding boxes). То есть результатом разметки стал набор .json файлов, каждый из которых содержал название документа и список текстовых строк с координатами заключающих их рамок и правильными метками.
+
+Для проверки логичности манифеста и правильности разметки была посчитана специальная статистика \href{https://en.wikipedia.org/wiki/Cohen%27s_kappa}{Cohen's kappa}. Данная статистика позволяет оценить меру согласия между аннотаторами при решении задачи классификации. Коэффициент согласованности можно посчитать следующим образом:
+
+$$ \kappa \equiv {\frac {p_{o}-p_{e}}{1-p_{e}}}=1-{\frac {1-p_{o}}{1-p_{e}}},$$
+где $p_0$ - вероятность согласованности меток, приписанных аннотаторами (точность), $p_e$ - вероятность того, что согласие аннотаторов достигнуто из-за случайной разметки.
+
+После разметки десяти документов значение статистики $\kappa$ оказалось равным 0.975, после чего было решено размечать остальной корпус документов. В результате было размечено 600 документов и отдельные .json файлы были объединены в один, использующийся для обучения классификатора.
+
+\subsection{Выделение признаков}
+
+\subsection{Подбор классификатора}
+
+\subsection{Анализ важности признаков}
+
+\subsection{Настройка параметров модели}
 
 \newpage
 \section{Заключение}
-
-\newpage
- 
-\addcontentsline{toc}{section}{Список литературы}
- \begin{thebibliography}{}
-    \bibitem{link1} AntoineDoucet, GabriellaKazai, SebastianColutto, Günter Mühlberger. Icdar 2013 competition on book structure extraction. In Document Analysis and Recognition (ICDAR), 2013 12th International Conference on, pages 1438–1443. IEEE, 2013.
-    \bibitem{link2} Rémi Juge, Najah-Imane Bentabet, Sira Ferradans. FinTOC-2019 Shared Task: Finding Title in Text Blocks. 
-    \bibitem{link3} Gael Lejeune Emmanuel Giguet. Daniel fintoc-2019 shared task: Toc extraction and title detection. In The Second Workshop on Financial Narrative Processing of NoDalida 2019, 2019.
-    \bibitem{link4} Muhammad Mahbubur Rahman, Tim Finin. Deep nderstanding of a Documents Structure. In 4th IEEE/ACM International Conference on Big Data Computing, Applications and Technologies, 2017.
-    \bibitem{link5} Ke Tian and Zi Jun Peng. Finance document ex- traction using data augmented and attention. In The Second Workshop on Financial Narrative Process- ing of NoDalida 2019, 2019.
-\end{thebibliography}
 
 \newpage
 \section{Приложение}
@@ -186,79 +191,126 @@
 
 На вход вам будут подаваться документы, в которых выделена прямоугольником одна строка. Вам необходимо для каждой выделенной строки документа определить её тип. Необходимо «Заголовок» пометить цифрой 1, «Список» - 2, «Текст» - 3, «Другое» - 4.
 
-\vspace{1cm}
+\begin{enumerate}
 
-1) Заголовок
+	\item Заголовок
 
-Название главы, секции, подглавы, параграфа. Строка помечается заголовком, если:
+	Название главы, секции, подглавы, параграфа. Строка помечается заголовком, если:
 
--- текст визуально (полностью) выделяется жирностью;
+	\begin{itemize}
+		\item текст визуально (полностью) выделяется жирностью;
 
-\begin{center}
-\frame{\includegraphics[width=1.0\textwidth]{pics/1.png}}
-\end{center}
+		\vspace{0.5cm}
 
--- текст полностью выделяется шрифтом (курсив, подчеркнутый, другой шрифт, другой размер шрифта);
+		\begin{restoretext}
+		\frame{\includegraphics[width=1.0\textwidth]{pics/1.png}}
+		\end{restoretext}
 
-\begin{center}
-\frame{\includegraphics[width=1.0\textwidth]{pics/2.png}}
-\end{center}
+		\item текст полностью выделяется шрифтом (курсив, подчеркнутый, другой шрифт, другой размер шрифта);
 
-при этом если текст строки выделен шрифтом частично, то заголовком это не считается;
+		\vspace{0.5cm}
 
-\begin{center}
-\frame{\includegraphics[width=1.0\textwidth]{pics/3.png}}
-\end{center}
+		\begin{restoretext}
+		\frame{\includegraphics[width=1.0\textwidth]{pics/2.png}}
+		\end{restoretext}
 
--- текст выделяется отступом (расположен по центру);
+		при этом если текст строки выделен шрифтом частично, то заголовком это не считается;
 
-\begin{center}
-\frame{\includegraphics[width=1.0\textwidth]{pics/4.png}}
-\end{center}
+		\vspace{0.5cm}
 
--- если заголовок занимает несколько строк, остальные строки тоже относятся к типу «заголовок».
+		\begin{restoretext}
+		\frame{\includegraphics[width=1.0\textwidth]{pics/3.png}}
+		\end{restoretext}
 
-\begin{center}
-\frame{\includegraphics[width=1.0\textwidth]{pics/5.png}}
-\end{center}
+		\item текст выделяется отступом (расположен по центру);
 
-2) Список
+		\vspace{0.5cm}
 
-Начало нумерованного или маркированного списка. Строка помечается как элемент списка, если:
+		\begin{restoretext}
+		\frame{\includegraphics[width=1.0\textwidth]{pics/4.png}}
+		\end{restoretext}
 
--- строка наряду с несколькими другими строками пронумерована («1. 1) а) 1.1» и т. д. в начале строки);
+		\item если заголовок занимает несколько строк, остальные строки тоже относятся к типу «заголовок».
 
-\begin{center}
-\frame{\includegraphics[width=1.0\textwidth]{pics/6.png}}
-\end{center}
+		\vspace{0.5cm}
 
-На картинке выше как элемент списка будут помечены только две строки, остальные помечаются как текст.
+		\begin{restoretext}
+		\frame{\includegraphics[width=1.0\textwidth]{pics/5.png}}
+		\end{restoretext}
 
-\begin{center}
-\frame{\includegraphics[width=1.0\textwidth]{pics/7.png}}
-\end{center}
+	\end{itemize}
 
--- строка наряду с несколькими другими выделена некоторым маркером (точка, тире и т. д.) ;
+	\item Список
 
-\begin{center}
-\frame{\includegraphics[width=1.0\textwidth]{pics/8.png}}
-\end{center}
+	Начало нумерованного или маркированного списка. Строка помечается как элемент списка, если:
 
-Здесь как элемент списка будут помечены только две строки, остальные помечаются как текст.
+	\begin{itemize}
+		\item строка наряду с несколькими другими строками пронумерована («1. 1) а) 1.1» и т. д. в начале строки);
 
+		\vspace{0.5cm}
 
--- если элемент списка визуально занимает несколько строк, все строки кроме первой помечаются как текст. Также к списку не относятся строки, помеченные как заголовок (выделенные шрифтом, жирностью и т. д.).
+		\begin{restoretext}
+		\frame{\includegraphics[width=1.0\textwidth]{pics/6.png}}
+		\end{restoretext}
 
-3) Текст
+		\vspace{0.5cm}
 
-Все остальные строки, содержащие текст документа, помечаются как текст.
+		\begin{restoretext}
+		\frame{\includegraphics[width=1.0\textwidth]{pics/7.png}}
+		\end{restoretext}
+
+		\vspace{0.5cm}
+
+		\begin{restoretext}
+		\frame{\includegraphics[width=1.0\textwidth]{pics/8.png}}
+		\end{restoretext}
+
+		На картинке выше как элемент списка будут помечены только две строки, остальные помечаются как текст.
+
+		\item строка наряду с несколькими другими выделена некоторым маркером (точка, тире и т. д.) ;
+
+		\vspace{0.5cm}
+
+		\begin{restoretext}
+		\frame{\includegraphics[width=1.0\textwidth]{pics/9.png}}
+		\end{restoretext}
+
+		\vspace{0.5cm}
+
+		\begin{restoretext}
+		\frame{\includegraphics[width=1.0\textwidth]{pics/10.png}}
+		\end{restoretext}
+
+		В примере выше как элемент списка будут помечены только две строки, остальные помечаются как текст.
+
+		\item если элемент списка визуально занимает несколько строк, все строки кроме первой помечаются как текст. Также к списку не относятся строки, помеченные как заголовок (выделенные шрифтом, жирностью и т. д.).
+
+	\end{itemize}
+
+	\item Текст
+
+	Все остальные строки, содержащие текст документа, помечаются как текст.
+
+\end{enumerate}
 
 На вход вам будут подаваться документы, в которых выделена прямоугольником одна строка. Вам необходимо для каждой выделенной строки документа определить её тип. Необходимо «Заголовок» пометить цифрой 1, «Список" - 2, «Текст» - 3. В случае, если прямоугольником выделена строка, не содержащая текст (пустая строка, рукописная подпись, печать), строку необходимо пометить как «Другое» (цифра 4), либо пропустить данную строку при разметке.
 
 Ниже приведен пример разметки. Красными прямоугольниками выделены заголовки, зелёными - элементы списков, а синими - текстовые блоки.
 
 \begin{center}
-\frame{\includegraphics[height=1.0\textwidth]{pics/example.png}}
+\frame{\includegraphics[width=1.0\textwidth]{pics/example.png}}
 \end{center}
+
+\newpage
+ 
+\addcontentsline{toc}{section}{Список литературы}
+ \begin{thebibliography}{}
+    \bibitem{link1} \href{https://hal.archives-ouvertes.fr/hal-01073396/document}{Antoine Doucet, Gabriella Kazai, Sebastian Colutto, Günter Mühlberger. Icdar 2013 competition on book structure extraction. In Document Analysis and Recognition (ICDAR), 2013 12th International Conference on, pages 1438–1443. IEEE, 2013.}
+    \bibitem{link2} \href{https://www.aclweb.org/anthology/W19-6407.pdf}{Rémi Juge, Najah-Imane Bentabet, Sira Ferradans. FinTOC-2019 Shared Task: Finding Title in Text Blocks.}
+    \bibitem{link3} \href{https://www.aclweb.org/anthology/W19-6409.pdf}{Gael Lejeune Emmanuel Giguet. Daniel fintoc-2019 shared task: Toc extraction and title detection. In The Second Workshop on Financial Narrative Processing of NoDalida 2019, 2019.}
+    \bibitem{link4} \href{http://www.ep.liu.se/ecp/165/001/ecp19165001.pdf}{Ke Tian and Zi Jun Peng. Finance document extraction using data augmented and attention. In The Second Workshop on Financial Narrative Processing of NoDalida 2019, 2019.}
+    \bibitem{link5} \href{https://dl.acm.org/doi/pdf/10.1145/3148055.3148080}{Muhammad Mahbubur Rahman, Tim Finin. Deep nderstanding of a Documents Structure. In 4th IEEE/ACM International Conference on Big Data Computing, Applications and Technologies, 2017.}
+    \bibitem{link6} \href{https://github.com/dronperminov/ParagraphLabelerApp}{ParagraphLabelerApp}
+\end{thebibliography}
 
 \end{document}

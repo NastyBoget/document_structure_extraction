@@ -6,3 +6,4 @@ ParagraphLabelerApp-master
 .idea
 manifest.pages
 latex
+*.DS_Store

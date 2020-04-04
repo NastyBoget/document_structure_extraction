@@ -61,7 +61,7 @@
 \tableofcontents
 
 \newpage 
-\section{Введение}
+\section*{Введение}\addcontentsline{toc}{section}{Введение}
 
 Большое количество текстовой информации представлено в виде pdf-документов, причем эти документы могут быть сканированными копиями других документов и у них может отсутствовать текстовый слой. При этом размер документов может быть очень большим. Зачастую требуется осуществлять поиск по содержимому таких документов и желательно осуществлять это более эффективным способом.
 
@@ -285,20 +285,91 @@ $$ \kappa \equiv {\frac {p_o-p_e}{1-p_e}}=1-{\frac {1-p_o}{1-p_e}},$$
 
 С использованием данных о важности признаков, в признаковое пространство были добавлены новые признаки. Например, вместо одного признака, отвечающего за жирность шрифта, была добавлена целая группа признаков, отвечающая за различные уровни жирности шрифта. Для самых важных признаков к вектору признаков каждой строки документа были добавлены усреднённые значения данных признаков по документу.
 
-На графике представлен итоговый список признаков и значения их важности.
+На графике выше представлен итоговый список признаков и значения их важности.
 
 \subsection{Настройка параметров модели}
 
+Градиентный бустинг — это алгоритм машинного обучения, который строит модель предсказания в форме ансамбля слабых предсказывающих моделей (например, деревьев решений).
 
+В нашем случае, при использовании XGBClassifier, для настройки доступны три группы параметров:
+
+\begin{itemize}
+
+	\item параметры, отвечающие за общее функционирование алгоритма (тип предсказывающей модели, число нитей для запуска);
+	\item параметры для предсказывающей модели, в нашем случае это дерево (шаг обучения, максимальная глубина, параметры регуляризации и т. д.);
+	\item параметры, задающие функцию потерь для минимизации и метрику для оценки качества.
+
+\end{itemize}
+
+Мы сосредоточимся на подборе параметров второй группы.
+
+Настройка параметров классификатора проводилась по алгоритму, предложенному в \cite{link7}:
+
+\begin{enumerate}
+
+	\item выбирается относительно высокий шаг обучения ($learning\_rate$), для которого подбирается количество деревьев ($n\_estimators$);
+	\item подбираются параметры деревьев ($max\_depth, min\_child\_weight,$ $gamma, subsample, colsample\_bytree$) для выбранного шага и количества деревьев;
+	\item настраиваются параметры регуляризации ($lambda, alpha$) для снижения сложности модели и улучшения производительности; 
+	\item понижается шаг обучения и выявляются оптимальные параметры.
+
+\end{enumerate}	
+
+На графике ниже представлено изменение F1-score в процессе подбора параметров. 
+
+Параметры итоговой модели:
+
+$learning\_rate$
+
+$n\_estimators$
+
+$max\_depth$
+
+$min\_child\_weight$
+
+$gamma$
+
+$subsample$
+
+$colsample\_bytree$
+
+$alpha$
+
+Итоговый F1-score, полученный в результате кросс-валидации:
+
+ $0.98$
 
 \newpage
-\section{Заключение}
+\section*{Заключение}\addcontentsline{toc}{section}{Заключение}
+
+В рамках моей курсовой работы был реализован алгоритм классификации строк документа, определяющий в документах заголовки и списки разных уровней вложенности.
+
+Был разработан манифест, описывающий каждый из типов строк, размечен копус документов, используемый в качестве тренировочных данных.
+
+Выявлены признаки, наиболее подходящие для обучения классификатора, проанализирована их важность. 
+
+Выбран наиболее подходящий классификатор, для которого были подобраны оптимальные параметры.
+
+Дальнейшие исследования могут быть направлены на определение уровней вложенности строк различных типов.
 
 \newpage
-\section{Приложение}
+ 
+\addcontentsline{toc}{section}{Список литературы}
+ \begin{thebibliography}{}
+    \bibitem{link1} \href{https://hal.archives-ouvertes.fr/hal-01073396/document}{Antoine Doucet, Gabriella Kazai, Sebastian Colutto, Günter Mühlberger. Icdar 2013 competition on book structure extraction. In Document Analysis and Recognition (ICDAR), 2013 12th International Conference on, pages 1438–1443. IEEE, 2013.}
+    \bibitem{link2} \href{https://www.aclweb.org/anthology/W19-6407.pdf}{Rémi Juge, Najah-Imane Bentabet, Sira Ferradans. FinTOC-2019 Shared Task: Finding Title in Text Blocks.}
+    \bibitem{link3} \href{https://www.aclweb.org/anthology/W19-6409.pdf}{Gael Lejeune Emmanuel Giguet. Daniel fintoc-2019 shared task: Toc extraction and title detection. In The Second Workshop on Financial Narrative Processing of NoDalida 2019, 2019.}
+    \bibitem{link4} \href{http://www.ep.liu.se/ecp/165/001/ecp19165001.pdf}{Ke Tian and Zi Jun Peng. Finance document extraction using data augmented and attention. In The Second Workshop on Financial Narrative Processing of NoDalida 2019, 2019.}
+    \bibitem{link5} \href{https://dl.acm.org/doi/pdf/10.1145/3148055.3148080}{Muhammad Mahbubur Rahman, Tim Finin. Deep nderstanding of a Documents Structure. In 4th IEEE/ACM International Conference on Big Data Computing, Applications and Technologies, 2017.}
+    \bibitem{link6} \href{https://github.com/dronperminov/ParagraphLabelerApp}{ParagraphLabelerApp}
+    \bibitem{link7} \href{https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/}{Complete Guide to Parameter Tuning in XGBoost with codes in Python}
+\end{thebibliography}
 
-\subsection{Манифест}
+\newpage
+\section*{Приложение}\addcontentsline{toc}{section}{Приложение}
 
+\textsc{\large Манифест}
+
+\vspace{0.5cm}
 
 Как правило, документы имеют логическую структуру: название, разбиение на главы, подглавы и т. д., нумерованные и маркированные списки. Мы занимаемся извлечением структурных элементов из сканированных документов. Выделение такой логической структуры документа может пригодиться для автоматизированного анализа документов. Мы хотим решать эту задачу как задачу классификации, нам нужно для каждой строки текста определить, к какому типу она относится.
 
@@ -415,17 +486,5 @@ $$ \kappa \equiv {\frac {p_o-p_e}{1-p_e}}=1-{\frac {1-p_o}{1-p_e}},$$
 \begin{center}
 \frame{\includegraphics[width=1.0\textwidth]{pics/example.png}}
 \end{center}
-
-\newpage
- 
-\addcontentsline{toc}{section}{Список литературы}
- \begin{thebibliography}{}
-    \bibitem{link1} \href{https://hal.archives-ouvertes.fr/hal-01073396/document}{Antoine Doucet, Gabriella Kazai, Sebastian Colutto, Günter Mühlberger. Icdar 2013 competition on book structure extraction. In Document Analysis and Recognition (ICDAR), 2013 12th International Conference on, pages 1438–1443. IEEE, 2013.}
-    \bibitem{link2} \href{https://www.aclweb.org/anthology/W19-6407.pdf}{Rémi Juge, Najah-Imane Bentabet, Sira Ferradans. FinTOC-2019 Shared Task: Finding Title in Text Blocks.}
-    \bibitem{link3} \href{https://www.aclweb.org/anthology/W19-6409.pdf}{Gael Lejeune Emmanuel Giguet. Daniel fintoc-2019 shared task: Toc extraction and title detection. In The Second Workshop on Financial Narrative Processing of NoDalida 2019, 2019.}
-    \bibitem{link4} \href{http://www.ep.liu.se/ecp/165/001/ecp19165001.pdf}{Ke Tian and Zi Jun Peng. Finance document extraction using data augmented and attention. In The Second Workshop on Financial Narrative Processing of NoDalida 2019, 2019.}
-    \bibitem{link5} \href{https://dl.acm.org/doi/pdf/10.1145/3148055.3148080}{Muhammad Mahbubur Rahman, Tim Finin. Deep nderstanding of a Documents Structure. In 4th IEEE/ACM International Conference on Big Data Computing, Applications and Technologies, 2017.}
-    \bibitem{link6} \href{https://github.com/dronperminov/ParagraphLabelerApp}{ParagraphLabelerApp}
-\end{thebibliography}
 
 \end{document}

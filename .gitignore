@@ -6,3 +6,6 @@ ParagraphLabelerApp-master
 .idea
 latex
 *.DS_Store
+toloka/data
+toloka/learning
+toloka/instruction

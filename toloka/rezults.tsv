@@ -1,0 +1,833 @@
+INPUT:image	OUTPUT:result	GOLDEN:result	HINT:text	ASSIGNMENT:worker_id
+
+??? блокировать пользователей, которые неправильно отвечают на контрольные задания
+??? выдавать контрольные задания всем пользователям
+повысить требования к пользователям
+
+спорные моменты: 
+рукописный текст
+выделена часть текста
+начало с кавычки
+уточнить про сноску
+
+////////////// контрольные задания //////////////////////////////////
+2 пользователя отвечали только 8
+
+/data-disk/img_046.jpg	8	0		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_047.jpg	8	2		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_048.jpg	8	2		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_049.jpg	8	2		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_050.jpg	8	2		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_051.jpg	8	2		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_052.jpg	8	3		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_053.jpg	8	3		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_054.jpg	8	4		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_055.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_056.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_057.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_058.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_059.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_060.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_061.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_062.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_063.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_064.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_065.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_066.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_067.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_068.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_069.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_070.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+				
+/data-disk/img_046.jpg	8	0		9fb46072526d742d8536441e39f99e22
+/data-disk/img_047.jpg	8	2		9fb46072526d742d8536441e39f99e22
+/data-disk/img_048.jpg	8	2		9fb46072526d742d8536441e39f99e22
+/data-disk/img_049.jpg	8	2		9fb46072526d742d8536441e39f99e22
+/data-disk/img_050.jpg	8	2		9fb46072526d742d8536441e39f99e22
+/data-disk/img_051.jpg	8	2		9fb46072526d742d8536441e39f99e22
+/data-disk/img_052.jpg	8	3		9fb46072526d742d8536441e39f99e22
+/data-disk/img_053.jpg	8	3		9fb46072526d742d8536441e39f99e22
+/data-disk/img_054.jpg	8	4		9fb46072526d742d8536441e39f99e22
+/data-disk/img_055.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_056.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_057.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_058.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_059.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_060.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_061.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_062.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_063.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_064.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_065.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_066.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_067.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_068.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_069.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_070.jpg	8	8		9fb46072526d742d8536441e39f99e22
+
+////////////////////////////////////////////////////////////////////
+				
+///////////////////// контрольное задание решено на 100% ///////////
+
+/data-disk/img_159.jpg	0	0		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_160.jpg	0	0		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_161.jpg	2	2		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_162.jpg	2	2		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_163.jpg	2	2		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_164.jpg	2	2		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_165.jpg	2	2		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_166.jpg	2	2		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_167.jpg	3	3		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_168.jpg	3	3		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_169.jpg	3	3		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_170.jpg	4	4		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_171.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_172.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_173.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_174.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_175.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_176.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_177.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_178.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_179.jpg	6	6		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_180.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_181.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_182.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_183.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_184.jpg	0	0		5c3b45ebe5f7b8ff40f2eb4f278babff
+				
+/data-disk/img_450.jpg	9	0		5c3b45ebe5f7b8ff40f2eb4f278babff // спорный момент (надпись)
+/data-disk/img_451.jpg	9	0		5c3b45ebe5f7b8ff40f2eb4f278babff // спорный момент (надпись)
+/data-disk/img_452.jpg	0	0		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_453.jpg	2	2		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_454.jpg	2	2		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_455.jpg	2	2		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_456.jpg	2	2		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_457.jpg	2	2		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_458.jpg	3	3		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_459.jpg	3	3		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_460.jpg	4	4		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_461.jpg	4	4		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_462.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_463.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_464.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_465.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_466.jpg	6	6		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_467.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_468.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_469.jpg	6	6		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_470.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_471.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_472.jpg	6	6		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_473.jpg	6	6		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_474.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_475.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_476.jpg	6	6		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_477.jpg	7	7		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_478.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_479.jpg	8	8		5c3b45ebe5f7b8ff40f2eb4f278babff
+
+////////////////////////////////////////////////////////////////////
+
+//////// контрольные задания (отвечали только 8) ///////////////////
+				
+/data-disk/img_159.jpg	8	0		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_160.jpg	8	0		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_161.jpg	8	2		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_162.jpg	8	2		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_163.jpg	8	2		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_164.jpg	8	2		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_165.jpg	8	2		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_166.jpg	8	2		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_167.jpg	8	3		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_168.jpg	8	3		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_169.jpg	8	3		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_170.jpg	8	4		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_171.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_172.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_173.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_174.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_175.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_176.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_177.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_178.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_179.jpg	8	6		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_180.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_181.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_182.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_183.jpg	8	8		a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_184.jpg	8	0		a769d7c988a3d2f37a98035485f9c1ce
+				
+/data-disk/img_450.jpg	8	0		9fb46072526d742d8536441e39f99e22
+/data-disk/img_451.jpg	8	0		9fb46072526d742d8536441e39f99e22
+/data-disk/img_452.jpg	8	0		9fb46072526d742d8536441e39f99e22
+/data-disk/img_453.jpg	8	2		9fb46072526d742d8536441e39f99e22
+/data-disk/img_454.jpg	8	2		9fb46072526d742d8536441e39f99e22
+/data-disk/img_455.jpg	8	2		9fb46072526d742d8536441e39f99e22
+/data-disk/img_456.jpg	8	2		9fb46072526d742d8536441e39f99e22
+/data-disk/img_457.jpg	8	2		9fb46072526d742d8536441e39f99e22
+/data-disk/img_458.jpg	8	3		9fb46072526d742d8536441e39f99e22
+/data-disk/img_459.jpg	8	3		9fb46072526d742d8536441e39f99e22
+/data-disk/img_460.jpg	8	4		9fb46072526d742d8536441e39f99e22
+/data-disk/img_461.jpg	8	4		9fb46072526d742d8536441e39f99e22
+/data-disk/img_462.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_463.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_464.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_465.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_466.jpg	8	6		9fb46072526d742d8536441e39f99e22
+/data-disk/img_467.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_468.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_469.jpg	8	6		9fb46072526d742d8536441e39f99e22
+/data-disk/img_470.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_471.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_472.jpg	8	6		9fb46072526d742d8536441e39f99e22
+/data-disk/img_473.jpg	8	6		9fb46072526d742d8536441e39f99e22
+/data-disk/img_474.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_475.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_476.jpg	8	6		9fb46072526d742d8536441e39f99e22
+/data-disk/img_477.jpg	8	7		9fb46072526d742d8536441e39f99e22
+/data-disk/img_478.jpg	8	8		9fb46072526d742d8536441e39f99e22
+/data-disk/img_479.jpg	8	8		9fb46072526d742d8536441e39f99e22
+
+////////////////////////////////////////////////////////////////////
+
+//////////// Правильно 100% ////////////////////////////////////////
+				
+/data-disk/img_000.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_001.jpg	2			9669137a65327de6c2b96be937822de2
+/data-disk/img_002.jpg	2			9669137a65327de6c2b96be937822de2
+/data-disk/img_003.jpg	2			9669137a65327de6c2b96be937822de2
+/data-disk/img_004.jpg	2			9669137a65327de6c2b96be937822de2
+/data-disk/img_005.jpg	2			9669137a65327de6c2b96be937822de2
+/data-disk/img_006.jpg	3			9669137a65327de6c2b96be937822de2
+/data-disk/img_007.jpg	3			9669137a65327de6c2b96be937822de2
+/data-disk/img_008.jpg	4			9669137a65327de6c2b96be937822de2
+/data-disk/img_009.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_010.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_011.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_012.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_013.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_014.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_015.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_016.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_017.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_018.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_019.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_020.jpg	5			9669137a65327de6c2b96be937822de2
+/data-disk/img_021.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_022.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_023.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_024.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_025.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_026.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_027.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_028.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_029.jpg	5			9669137a65327de6c2b96be937822de2
+/data-disk/img_030.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_031.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_032.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_033.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_034.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_035.jpg	8			9669137a65327de6c2b96be937822de2
+				
+/data-disk/img_000.jpg	0			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_001.jpg	2			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_002.jpg	2			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_003.jpg	2			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_004.jpg	2			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_005.jpg	2			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_006.jpg	3			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_007.jpg	3			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_008.jpg	0			5c3b45ebe5f7b8ff40f2eb4f278babff // неправильно
+/data-disk/img_009.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_010.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_011.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_012.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_013.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_014.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_015.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_016.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_017.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_018.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_019.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_020.jpg	5			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_021.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_022.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_023.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_024.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_025.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_026.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_027.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_028.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_029.jpg	5			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_030.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_031.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_032.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_033.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_034.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_035.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+				
+/////////////////// неправильно ////////////////////////////////////
+
+/data-disk/img_036.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_037.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_038.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_039.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_040.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_041.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_042.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_043.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_044.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_045.jpg	8			9fb46072526d742d8536441e39f99e22
+				
+/data-disk/img_036.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_037.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_038.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_039.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_040.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_041.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_042.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_043.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_044.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_045.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+
+////////////////////////////////////////////////////////////////////
+
+/////////////// правильно 100% /////////////////////////////////////
+
+/data-disk/img_071.jpg	1			9669137a65327de6c2b96be937822de2
+/data-disk/img_072.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_073.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_074.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_075.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_076.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_077.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_078.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_079.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_080.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_081.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_082.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_083.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_084.jpg	6			9669137a65327de6c2b96be937822de2
+/data-disk/img_085.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_086.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_087.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_088.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_089.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_090.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_091.jpg	6			9669137a65327de6c2b96be937822de2
+/data-disk/img_092.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_093.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_094.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_095.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_096.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_097.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_098.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_099.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_100.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_101.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_102.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_103.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_104.jpg	1			9669137a65327de6c2b96be937822de2
+				
+/data-disk/img_071.jpg	0			f51d32b526da6aece9f63829567ab407 // неправильно
+/data-disk/img_072.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_073.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_074.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_075.jpg	4			f51d32b526da6aece9f63829567ab407 // неправильно
+/data-disk/img_076.jpg	4			f51d32b526da6aece9f63829567ab407 // неправильно
+/data-disk/img_077.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_078.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_079.jpg	0			f51d32b526da6aece9f63829567ab407 // неправильно
+/data-disk/img_080.jpg	4			f51d32b526da6aece9f63829567ab407 // неправильно
+/data-disk/img_081.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_082.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_083.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_084.jpg	4			f51d32b526da6aece9f63829567ab407 // неправильно
+/data-disk/img_085.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_086.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_087.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_088.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_089.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_090.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_091.jpg	0			f51d32b526da6aece9f63829567ab407 // неправильно
+/data-disk/img_092.jpg	7			f51d32b526da6aece9f63829567ab407
+/data-disk/img_093.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_094.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_095.jpg	7			f51d32b526da6aece9f63829567ab407
+/data-disk/img_096.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_097.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_098.jpg	7			f51d32b526da6aece9f63829567ab407
+/data-disk/img_099.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_100.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_101.jpg	7			f51d32b526da6aece9f63829567ab407
+/data-disk/img_102.jpg	0			f51d32b526da6aece9f63829567ab407 // неправильно
+/data-disk/img_103.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_104.jpg	0			f51d32b526da6aece9f63829567ab407 // неправильно
+
+////////////////////////////////////////////////////////////////////
+
+/////////////// неправильно ////////////////////////////////////////
+				
+/data-disk/img_139.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_140.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_141.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_142.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_143.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_144.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_145.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_146.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_147.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_148.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_149.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_150.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_151.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_152.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_153.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_154.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_155.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_156.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_157.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_158.jpg	8			9fb46072526d742d8536441e39f99e22
+				
+/data-disk/img_139.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_140.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_141.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_142.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_143.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_144.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_145.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_146.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_147.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_148.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_149.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_150.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_151.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_152.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_153.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_154.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_155.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_156.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_157.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_158.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+
+////////////////////////////////////////////////////////////////////
+
+/////////////////// правильно 100% /////////////////////////////////
+				
+/data-disk/img_185.jpg	1			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_186.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_187.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_188.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_189.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_190.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_191.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_192.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_193.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_194.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_195.jpg	6			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_196.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_197.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_198.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_199.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_200.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_201.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_202.jpg	6			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_203.jpg	7			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_204.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_205.jpg	7			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_206.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_207.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_208.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_209.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_210.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_211.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_212.jpg	6			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_213.jpg	7			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_214.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_215.jpg	7			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_216.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+				
+/data-disk/img_185.jpg	1			9669137a65327de6c2b96be937822de2
+/data-disk/img_186.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_187.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_188.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_189.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_190.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_191.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_192.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_193.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_194.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_195.jpg	6			9669137a65327de6c2b96be937822de2
+/data-disk/img_196.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_197.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_198.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_199.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_200.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_201.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_202.jpg	6			9669137a65327de6c2b96be937822de2
+/data-disk/img_203.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_204.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_205.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_206.jpg	6			9669137a65327de6c2b96be937822de2 // неправильно
+/data-disk/img_207.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_208.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_209.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_210.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_211.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_212.jpg	6			9669137a65327de6c2b96be937822de2
+/data-disk/img_213.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_214.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_215.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_216.jpg	8			9669137a65327de6c2b96be937822de2
+
+////////////////////////////////////////////////////////////////////
+
+//////////////////// неправильно - рандомные ответы ////////////////
+				
+/data-disk/img_217.jpg	1			40f2089b03cbd55f6ce1c64997be5631 // неправильно
+/data-disk/img_218.jpg	3			40f2089b03cbd55f6ce1c64997be5631 // неправильно
+/data-disk/img_219.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_220.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_221.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_222.jpg	4			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_223.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_224.jpg	4			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_225.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_226.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_227.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_228.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_229.jpg	6			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_230.jpg	4			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_231.jpg	1			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_232.jpg	6			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_233.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_234.jpg	6			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_235.jpg	7			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_236.jpg	4			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_237.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_238.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_239.jpg	6			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_240.jpg	4			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_241.jpg	4			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_242.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+				
+/data-disk/img_217.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_218.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_219.jpg	8			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_220.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_221.jpg	1			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_222.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_223.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_224.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_225.jpg	8			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_226.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_227.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_228.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_229.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_230.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_231.jpg	1			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_232.jpg	8			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_233.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_234.jpg	9			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_235.jpg	8			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_236.jpg	8			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_237.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_238.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_239.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_240.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_241.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_242.jpg	8			38ed8b22028c574686cfccd37c9ed72d
+
+////////////////////////////////////////////////////////////////////
+
+//////////////// частично правильно ////////////////////////////////
+				
+/data-disk/img_280.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_281.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_282.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_283.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_284.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_285.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_286.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_287.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_288.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_289.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_290.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_291.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_292.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_293.jpg	4			c1f620167bf2b2a180444981a85ee5ea // неправильно
+/data-disk/img_294.jpg	6			c1f620167bf2b2a180444981a85ee5ea // неправильно
+/data-disk/img_295.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_296.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_297.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_298.jpg	8			c1f620167bf2b2a180444981a85ee5ea
+/data-disk/img_299.jpg	1			c1f620167bf2b2a180444981a85ee5ea // неправильно
+/data-disk/img_300.jpg	1			c1f620167bf2b2a180444981a85ee5ea // неправильно
+/data-disk/img_301.jpg	1			c1f620167bf2b2a180444981a85ee5ea // неправильно
+/data-disk/img_302.jpg	1			c1f620167bf2b2a180444981a85ee5ea // неправильно
+				
+/data-disk/img_280.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_281.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_282.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_283.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_284.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_285.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_286.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_287.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_288.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_289.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_290.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_291.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_292.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_293.jpg	6			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_294.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_295.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_296.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_297.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_298.jpg	8			5c3b45ebe5f7b8ff40f2eb4f278babff
+/data-disk/img_299.jpg	9			5c3b45ebe5f7b8ff40f2eb4f278babff // неправильно (уточнить про сноску)
+/data-disk/img_300.jpg	9			5c3b45ebe5f7b8ff40f2eb4f278babff // неправильно
+/data-disk/img_301.jpg	9			5c3b45ebe5f7b8ff40f2eb4f278babff // неправильно
+/data-disk/img_302.jpg	9			5c3b45ebe5f7b8ff40f2eb4f278babff // неправильно
+				
+////////////////////////////////////////////////////////////////////
+
+///////////////// частично правильно ///////////////////////////////
+
+/data-disk/img_340.jpg	1			9669137a65327de6c2b96be937822de2
+/data-disk/img_341.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_342.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_343.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_344.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_345.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_346.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_347.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_348.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_349.jpg	7			9669137a65327de6c2b96be937822de2
+/data-disk/img_350.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_351.jpg	6			9669137a65327de6c2b96be937822de2
+/data-disk/img_352.jpg	5			9669137a65327de6c2b96be937822de2 // неправильно (кавычка)
+/data-disk/img_353.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_354.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_355.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_356.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_357.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_358.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_359.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_360.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_361.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_362.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_363.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_364.jpg	6			9669137a65327de6c2b96be937822de2
+/data-disk/img_365.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_366.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_367.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_368.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_369.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_370.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_371.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_372.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_373.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_374.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_375.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_376.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_377.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_378.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_379.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_380.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_381.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_382.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_383.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_384.jpg	4			9669137a65327de6c2b96be937822de2
+/data-disk/img_385.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_386.jpg	8			9669137a65327de6c2b96be937822de2
+/data-disk/img_387.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_388.jpg	0			9669137a65327de6c2b96be937822de2
+/data-disk/img_389.jpg	9			9669137a65327de6c2b96be937822de2 // неправильно, нужно относить такое к Other 
+/data-disk/img_390.jpg	9			9669137a65327de6c2b96be937822de2 // неправильно
+/data-disk/img_391.jpg	1			9669137a65327de6c2b96be937822de2
+				
+/data-disk/img_340.jpg	0			f51d32b526da6aece9f63829567ab407 // неправильно
+/data-disk/img_341.jpg	7			f51d32b526da6aece9f63829567ab407
+/data-disk/img_342.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_343.jpg	7			f51d32b526da6aece9f63829567ab407
+/data-disk/img_344.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_345.jpg	7			f51d32b526da6aece9f63829567ab407
+/data-disk/img_346.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_347.jpg	7			f51d32b526da6aece9f63829567ab407
+/data-disk/img_348.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_349.jpg	7			f51d32b526da6aece9f63829567ab407
+/data-disk/img_350.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_351.jpg	5			f51d32b526da6aece9f63829567ab407 // неправильно
+/data-disk/img_352.jpg	7			f51d32b526da6aece9f63829567ab407 // неправильно (кавычка)
+/data-disk/img_353.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_354.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_355.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_356.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_357.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_358.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_359.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_360.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_361.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_362.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_363.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_364.jpg	6			f51d32b526da6aece9f63829567ab407
+/data-disk/img_365.jpg	4			f51d32b526da6aece9f63829567ab407 // неправильно (ссылка на статью)
+/data-disk/img_366.jpg	4			f51d32b526da6aece9f63829567ab407 // неправильно (ссылка на статью)
+/data-disk/img_367.jpg	0			f51d32b526da6aece9f63829567ab407
+/data-disk/img_368.jpg	0			f51d32b526da6aece9f63829567ab407
+/data-disk/img_369.jpg	0			f51d32b526da6aece9f63829567ab407
+/data-disk/img_370.jpg	0			f51d32b526da6aece9f63829567ab407
+/data-disk/img_371.jpg	0			f51d32b526da6aece9f63829567ab407
+/data-disk/img_372.jpg	0			f51d32b526da6aece9f63829567ab407
+/data-disk/img_373.jpg	0			f51d32b526da6aece9f63829567ab407
+/data-disk/img_374.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_375.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_376.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_377.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_378.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_379.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_380.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_381.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_382.jpg	0			f51d32b526da6aece9f63829567ab407
+/data-disk/img_383.jpg	0			f51d32b526da6aece9f63829567ab407
+/data-disk/img_384.jpg	4			f51d32b526da6aece9f63829567ab407
+/data-disk/img_385.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_386.jpg	8			f51d32b526da6aece9f63829567ab407
+/data-disk/img_387.jpg	0			f51d32b526da6aece9f63829567ab407
+/data-disk/img_388.jpg	0			f51d32b526da6aece9f63829567ab407
+/data-disk/img_389.jpg	9			f51d32b526da6aece9f63829567ab407 // неправильно
+/data-disk/img_390.jpg	1			f51d32b526da6aece9f63829567ab407 // неправильно (уточнить про сноску)
+/data-disk/img_391.jpg	1			f51d32b526da6aece9f63829567ab407
+
+////////////////////////////////////////////////////////////////////
+
+/////////////////////// неправильно ////////////////////////////////
+				
+/data-disk/img_392.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_393.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_394.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_395.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_396.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_397.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_398.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_399.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_400.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_401.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_402.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_403.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_404.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_405.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_406.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_407.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_408.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_409.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_410.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_411.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_412.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_413.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_414.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+/data-disk/img_415.jpg	8			a769d7c988a3d2f37a98035485f9c1ce
+				
+/data-disk/img_392.jpg	6			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_393.jpg	4			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_394.jpg	7			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_395.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_396.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_397.jpg	6			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_398.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_399.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_400.jpg	4			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_401.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_402.jpg	4			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_403.jpg	6			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_404.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_405.jpg	2			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_406.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_407.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_408.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_409.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_410.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_411.jpg	6			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_412.jpg	4			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_413.jpg	4			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_414.jpg	9			40f2089b03cbd55f6ce1c64997be5631
+/data-disk/img_415.jpg	8			40f2089b03cbd55f6ce1c64997be5631
+
+////////////////////////////////////////////////////////////////////
+
+/////////////// неправильно ////////////////////////////////////////
+				
+/data-disk/img_416.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_417.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_418.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_419.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_420.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_421.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_422.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_423.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_424.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_425.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_426.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_427.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_428.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_429.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_430.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_431.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_432.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_433.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_434.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_435.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_436.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_437.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_438.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_439.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_440.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_441.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_442.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_443.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_444.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_445.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_446.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_447.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_448.jpg	8			9fb46072526d742d8536441e39f99e22
+/data-disk/img_449.jpg	8			9fb46072526d742d8536441e39f99e22
+				
+/data-disk/img_416.jpg	1			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_417.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_418.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_419.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_420.jpg	8			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_421.jpg	8			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_422.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_423.jpg	8			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_424.jpg	9			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_425.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_426.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_427.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_428.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_429.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_430.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_431.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_432.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_433.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_434.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_435.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_436.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_437.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_438.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_439.jpg	9			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_440.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_441.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_442.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_443.jpg	9			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_444.jpg	8			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_445.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_446.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_447.jpg	2			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_448.jpg	4			38ed8b22028c574686cfccd37c9ed72d
+/data-disk/img_449.jpg	6			38ed8b22028c574686cfccd37c9ed72d
+
+////////////////////////////////////////////////////////////////////
+				

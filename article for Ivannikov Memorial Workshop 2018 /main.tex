@@ -34,7 +34,7 @@
 \volhead{1}
 \issuehead{2}
 \pageshead{3--4}
-\yearhead{2000}
+\yearhead{2020}
 
 \setcounter{page}{1} % Set first page number
 
@@ -43,21 +43,25 @@
 \newauthor
 \inst{1, 2}
 \authorname{Bogatenkova A.\,O.}{Богатенкова~А.\,О.}
+\orcid{0000-0001-8679-1568}
 \email{nastyboget@ispras.ru}
 
 \newauthor
 \inst{1}
 \authorname{Kozlov I.\,S.}{Козлов~И.\,С.}
+\orcid{0000-0002-0145-1159}
 \email{kozlov-ilya@ispras.ru}
 
 \newauthor
 \inst{1}
 \authorname{Belyaeva O.\,V.}{Беляева~О.\,В.}
+\orcid{0000-0002-6008-9671}
 \email{belyaeva@ispras.ru}
 
 \newauthor
 \inst{1, 2}
 \authorname{Perminov A.\,I.}{Перминов~А.\,И.}
+\orcid{0000-0001-8047-0114}
 \email{perminov@ispras.ru}
 
 
@@ -67,14 +71,13 @@
 
 \title{Logical structure extraction from scanned documents}{Извлечение логической структуры из сканированных документов}
 
-\doi{10.15514/ISPRAS-2000-1(2)-33}
+\doi{10.15514/ISPRAS-2020-2(3)-32}
 \keywords{machine learning; document structure; natural language processing; OCR.}{машинное обучение; структура документа; обработка естественного языка; OCR.}
 
 \abstract{
-There are many scanned documents without a text layer. Understanding the information in such documents may be useful for their analysis, e. g. for the effective search within documents. 
-The paper describes pipeline for scanned documents processing. The method based on multiclass classification including headers and lists classes.
-Text and bounding boxes for lines were extracted using OCR methods, different features were generated for each line, which were the input of the classifier.
-We also made available dataset \cite{data} of documents, which includes bounding boxes and labels for each document line; evaluated the effectiveness of our approach using this dataset and described the possible future work in the field of document processing. }{Большое количество информации представлено в виде сканированных документов без текстового слоя, то есть по текст документа не копируется и по нему нельзя осуществлять поиск. Однако зачастую требуется осуществлять быстрый поиск по их содержимому. Знание структуры документов может способствовать более эффективному их анализу.
+Logical structure extraction from various documents has been a longstanding research topic because of its high influence on a wide range of practical applications. A huge variety of different types of documents and, as a consequence, the variety of possible document structures make this task particularly difficult. The purpose of this work is to show one of the ways to represent and extract the structure of documents of a special type.
+We consider scanned documents without a text layer. This means that the text in such documents can not be selected or copied. Moreover, you can not search for the content of such documents. However, a huge number of scanned documents exist that one needs to work with. Understanding the information in such documents may be useful for their analysis, e. g. for the effective search within documents, navigation and summarization. To cope with a large collection of documents the task should be performed automatically.
+The paper describes the pipeline for scanned documents processing. The method is based on the multiclass classification of document lines. The set of classes includes textual lines, headers and lists. Firstly text and bounding boxes for document lines are extracted using OCR methods, then different features are generated for each line, which are the input of the classifier. We also made available dataset \cite{data} of documents, which includes bounding boxes and labels for each document line; evaluated the effectiveness of our approach using this dataset and described the possible future work in the field of document processing. }{Большое количество информации представлено в виде сканированных документов без текстового слоя, то есть текст документа не копируется и по нему нельзя осуществлять поиск. Однако зачастую требуется осуществлять быстрый поиск по их содержимому. Знание структуры документов может способствовать более эффективному их анализу.
 В статье предложен пайплайн обработки сканированных документов, а также разработан метод извлечения структуры из них. Данный метод основан на многоклассовой классификации строк документа, в том числе классификации на заголовки и списки.
 Пайплайн состоит из извлечения текста и рамок строк документов с помощью методов OCR, формирования признаков и обучения классификатора на данных признаках. Кроме того, размечен и доступен для изучения \cite{data} корпус документов, проведена экспериментальная проверка реализованного метода на данном корпусе и описаны возможности для дальнейшей работы и исследований.}
 
@@ -411,13 +414,13 @@ We also made available dataset \cite{data} of documents, which includes bounding
 {\vskip 12pt\normalfont\sffamily\bfseries\large Информация об авторах / Information about authors}
 \setlength{\parskip}{6pt}
 
-Богатенкова Анастасия ОЛЕГОВНА является бакалавром кафедры Системного программирования Московского государственного университета имени М.В. Ломоносова. Научные интересы: распознавание структуры документов, цифровая обработка изображений.
+Анастасия Олеговна БОГАТЕНКОВА является бакалавром кафедры Системного программирования Московского государственного университета имени М.В. Ломоносова. Научные интересы: распознавание структуры документов, цифровая обработка изображений.
 
-Bogatenkova Anastasiya OLEGOVNA is a bachelor of the Department of system programming of CMC of Lomonosov Moscow State University. Research interests: document layout analysis, digital image processing.
+Anastasiya Olegovna BOGATENKOVA is a bachelor of the Department of system programming of CMC of Lomonosov Moscow State University. Research interests: document layout analysis, digital image processing.
 
-Козлов Илья СЕРГЕЕВИЧ  является стажером-исследователем Института Системного Программирования РАН. Научные интересы: распознавание структуры документов, цифровая обработка изображений, нейросетевая обработка данных, распознавание образов.
+Илья Сергеевич КОЗЛОВ  является стажером-исследователем Института Системного Программирования РАН. Научные интересы: распознавание структуры документов, цифровая обработка изображений, нейросетевая обработка данных, распознавание образов.
 
-Kozlov Ilya SERGEEVICH --- researcher at ISP RAN. Research interests: document layout analysis, digital image processing, neural network data processing, image pattern recognition.
+Ilya Sergeevich KOZLOV --- researcher at ISP RAN. Research interests: document layout analysis, digital image processing, neural network data processing, image pattern recognition.
 
 Оксана Владимировна БЕЛЯЕВА является стажером-исследователем Института Системного Программирования РАН. Научные интересы: распознавание структуры документов, цифровая обработка изображений, нейросетевая обработка данных, распознавание образов.
 
